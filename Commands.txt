@@ -145,7 +145,7 @@ so it will show logs from that branch of remote---
 *hotfix/missing-link
 
 
-	==>Pull Request               NOTE!(feature of github)					(Very important Concept Carefully note!)
+	==>Pull Request               NOTE!(Pull request feature of github)					(Very important Concept Carefully note!)
 		* (member can just see the code but can't make changes in this particular branch and just can pull request 
 
 	  	  then team leader can accept pull accept if he agree with request.)
