@@ -1,0 +1,172 @@
+1) git config --global user.name "Ahmad jajja"
+---uses for setting user name---
+
+2) git config --global user.email "ahmadjajja86@gmail.com"
+---uses for setting user email---
+
+3) dir
+---uses for checking our current directory folder,this directory have no link with git yet.---
+
+4) git init
+---uses for initializing a git repo,For Now are repo's are untracked yet---
+
+5) git status
+---uses for checking status of our repo(Means status of our current working folder)---
+
+6) git add .
+---uses for addding repo in staging area.Now Our repo started tracking by git---
+
+7) git commit -m "Message here about current version"
+---uses for making versions of our working product---
+
+8) git log
+---uses for checking history of our project versions---
+
+9) git reset
+---uses for unstaging file from staging area---
+
+10) git reset --hard
+---uses for unstaging file from staging area and deleting all changes that have done in this version of our currently working project---
+ 
+---------------------Branch Commands------------------------
+
+Branch is manadatory in git and byDefault branch is master branch.
+Note: (HEAD -> dev) head refer to current Branch 
+***Master branch Contains less commits 
+***Derived branch Contains more commits because it contains commits that
+are parts of master branch 
+
+
+
+11)git branch
+---Show list of branches---
+
+12)git branch -v
+---Show list of branches with some details---
+
+13)git branch new-dev(new-dev is branch name here)
+---Creates new branch with name 'new-dev'(inside quotes is branch name)
+
+14)git checkout new-dev
+---switch(move) to 'new-dev' branch---
+
+15)git merge new-dev
+---Merge 'new-dev' branch into current active branch---
+
+16)git log new-dev..master
+---show commit difference in two branches---
+
+--------------------Stash Commands-------------------------
+
+17)git stash
+---Save local changes stash clipboard---
+
+18)git stash save <name>
+---save local changes in stash clipboard with the name provided in command
+
+19)git stash list 
+---Show list of stashes---
+
+20)git stash pop
+---Apply latest stash and remove it from clipboard---
+
+21)git stash apply stashname
+---Apply specific stash and that stash will remain saved in clipboard---
+
+22)git stash clear
+---Clear all changes in different files in currently working folder---
+
+-------------------Github Commands------------------
+
+1)git clone URL(URL of repositry).
+---this command will pull code from github server to our local system---
+
+2)git push 
+---Run this command to push our change to remote repository on server---
+
+3)git fetch
+---Fetch changes from remote repository---
+
+4)git merge
+---Merge changes that was fetch by 'git fetch' command---
+
+5)git pull
+---Fetch and merge changes from remote repository---
+
+6)git remote -v
+---show remote urls---
+
+7)git remote show origin              2
+---show details of origin---
+
+8)git remote add origin URL(repository name)           1
+---This Command will add remote repo in local repository---
+
+9)git push origin master             (Confusion Clear)
+---uses for push changes on server but little confused about 
+this command search on google this command---
+
+----------Commands For making local repo to remote repo----------
+
+10)git push -u origin master           3
+---(The "-u" flag stablishes a tracking connection between 
+remote and our local)---
+
+11)git push 'repoName' 'branch'(git push origin master)      @recommended
+---(Git push command require which remote repository you want
+to push and in which branch of remote repository) standard single
+ branch must be one(master branch)---
+
+12)git log
+---Show logs for current branch---
+
+13)git log remote/branch(git log origin/master)
+---in git log command you specify remote repository and branch 
+so it will show logs from that branch of remote---
+
+
+======Pushing a local branch to a remote repository======
+
+1) git branch work
+---this will create new branch 'work' on local repo---
+
+2) git checkout work 
+---Switch to 'work' branch---
+
+3) Make Changes
+
+4) git push -u origin work
+
+
+======Branches=====
+*master
+*development
+*feature/rss-feed
+*hotfix/missing-link
+
+
+	==>Pull Request               NOTE!(feature of github)					(Very important Concept Carefully note!)
+		* (member can just see the code but can't make changes in this particular branch and just can pull request 
+
+	  	  then team leader can accept pull accept if he agree with request.)
+
+		* When working in team we want to review code of team members and merge code in main branch only after that.
+
+		* For this purpose github provide pull request feature.
+
+		* In professional projects we will see very often.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
