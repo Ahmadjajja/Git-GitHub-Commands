@@ -27,6 +27,12 @@
 
 10) git reset --hard
 ---uses for unstaging file from staging area and deleting all changes that have done in this version of our currently working project---
+
+11)git reset --hard HEAD~2
+---Very important command for deleting last commits(deleting last two commits) in local---
+
+12)git push origin +branchName --force
+---Very important command for pushing and merging previous(current) commit to remote---
  
 ---------------------Branch Commands------------------------
 
